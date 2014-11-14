@@ -1,0 +1,32 @@
+<Title:>
+  Todos
+
+<todos: element="todos">
+  {{if @todos}}
+  <ul>
+    {{each @todos as #todo, #index}}
+      <item></item>
+    {{/}}
+  </ul>
+  {{/}}
+
+<item: element="item">
+  <li>
+    {{#todo.text}} <button on-click="add($at(#todo))">reply</button>
+    <todos todos="{{#todo.replies}}"></todos>
+  </li>
+
+<Body:>
+  <view name="d-connection-alert"></view>
+  <view name="d-before-unload"></view>
+    <ul>
+      <li><a href="/home">home</a></li>
+      <li><a href="/home2">home2</a></li>
+      <li><a href="/home3">home3</a></li>
+      <li><a href="/home4">home4</a></li>
+    </ul>
+  <div as="container">
+    <todos todos="{{_page.todos}}"></todos>
+    <button on-click="add()">add</button>
+  </div>
+

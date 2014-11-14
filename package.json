@@ -1,0 +1,34 @@
+{
+  "name": "d-test4",
+  "description": "d-test4",
+  "version": "0.6.0",
+  "homepage": "http://derbyjs.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codeparty/derby-examples.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "express": "~3",
+    "d-barchart": "~0.1.0",
+    "d-barchart-vanilla": "~0.1.0",
+    "d-before-unload": "~0.1.0",
+    "d-bootstrap": "~0.1.0",
+    "d-codemirror": "~0.1.0",
+    "d-connection-alert": "~0.1.0",
+    "d-d3-barchart": "~0.1.0",
+    "d-showdown": "~0.1.0",
+    "racer-highway": "*",
+    "derby-starter": "*",
+    "derby": "*",
+    "derby-stylus": "*"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "0.10.x"
+  }
+}
